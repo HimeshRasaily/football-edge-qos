@@ -1,0 +1,511 @@
+
+Match ended.
+Match starting...
+
+[  0.0 min] Player  1 | HR:  69 bpm | Accel: 1.00
+[  0.0 min] Player  2 | HR:  84 bpm | Accel: 1.56
+[  0.0 min] Player  3 | HR:  72 bpm | Accel: 1.92
+[  0.0 min] Player  4 | HR:  77 bpm | Accel: 1.06
+[  0.0 min] Player  5 | HR:  71 bpm | Accel: 1.94
+[  0.0 min] Player  6 | HR:  69 bpm | Accel: 1.82
+[  0.0 min] Player  7 | HR:  71 bpm | Accel: 2.00
+[  0.0 min] Player  8 | HR:  76 bpm | Accel: 0.94
+[  0.0 min] Player  9 | HR:  81 bpm | Accel: 0.64
+[  0.0 min] Player 10 | HR:  84 bpm | Accel: 0.93
+[  0.0 min] Player 11 | HR:  75 bpm | Accel: 1.69
+[  0.0 min] Player 12 | HR:  70 bpm | Accel: 1.48
+[  0.0 min] Player 13 | HR:  78 bpm | Accel: 1.64
+[  0.0 min] Player 14 | HR:  82 bpm | Accel: 1.95
+[  0.0 min] Player 15 | HR:  88 bpm | Accel: 0.65
+[  0.0 min] Player 16 | HR:  75 bpm | Accel: 0.99
+[  0.0 min] Player 17 | HR:  81 bpm | Accel: 0.57
+[  0.0 min] Player 18 | HR:  87 bpm | Accel: 1.19
+[  0.0 min] Player 19 | HR:  83 bpm | Accel: 0.72
+[  0.0 min] Player 20 | HR:  85 bpm | Accel: 0.75
+[  0.0 min] Player 21 | HR:  80 bpm | Accel: 1.12
+[  0.0 min] Player 22 | HR:  72 bpm | Accel: 0.58
+[  0.4 min] Player  1 | HR:  71 bpm | Accel: 1.46
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=2821.86ms
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2746.31ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2655.03ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2591.49ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2550.96ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2508.33ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2399.37ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=2354.37ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=2270.12ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=2140.86ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=2041.39ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1955.51ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1925.23ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1884.56ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1734.35ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1672.95ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1598.96ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1464.61ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1434.57ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1314.02ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1223.53ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1149.48ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.02ms
+[  0.4 min] Player  2 | HR:  82 bpm | Accel: 0.92
+[  0.4 min] Player  3 | HR:  74 bpm | Accel: 1.85
+[  0.4 min] Player  4 | HR:  74 bpm | Accel: 1.53
+[  0.4 min] Player  5 | HR:  72 bpm | Accel: 0.59
+[  0.4 min] Player  6 | HR:  67 bpm | Accel: 0.62
+[  0.4 min] Player  7 | HR:  74 bpm | Accel: 0.59
+[  0.4 min] Player  8 | HR:  75 bpm | Accel: 0.83
+[  0.4 min] Player  9 | HR:  80 bpm | Accel: 0.71
+[  0.4 min] Player 10 | HR:  83 bpm | Accel: 0.66
+[  0.4 min] Player 11 | HR:  73 bpm | Accel: 1.90
+[  0.4 min] Player 12 | HR:  72 bpm | Accel: 1.03
+[  0.4 min] Player 13 | HR:  81 bpm | Accel: 1.23
+[  0.4 min] Player 14 | HR:  81 bpm | Accel: 1.44
+[  0.4 min] Player 15 | HR:  87 bpm | Accel: 0.67
+[  0.4 min] Player 16 | HR:  76 bpm | Accel: 0.99
+[  0.4 min] Player 17 | HR:  81 bpm | Accel: 1.26
+[  0.4 min] Player 18 | HR:  89 bpm | Accel: 1.13
+[  0.4 min] Player 19 | HR:  86 bpm | Accel: 1.76
+[  0.4 min] Player 20 | HR:  86 bpm | Accel: 1.67
+[  0.4 min] Player 21 | HR:  81 bpm | Accel: 0.70
+[  0.4 min] Player 22 | HR:  70 bpm | Accel: 1.22
+[  0.8 min] Player  1 | HR:  68 bpm | Accel: 1.88
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2662.79ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2602.95ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2571.37ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2421.35ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2331.05ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2286.44ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=2226.2ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=2135.89ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=2017.88ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=1881.69ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1826.46ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1740.5ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1618.81ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1551.18ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1492.76ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1450.3ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1405.2ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1340.1ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1193.91ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1137.3ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1024.3ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.02ms
+[  0.8 min] Player  2 | HR:  83 bpm | Accel: 1.98
+[  0.8 min] Player  3 | HR:  71 bpm | Accel: 0.98
+[  0.8 min] Player  4 | HR:  71 bpm | Accel: 1.41
+[  0.8 min] Player  5 | HR:  73 bpm | Accel: 0.69
+[  0.8 min] Player  6 | HR:  69 bpm | Accel: 1.63
+[  0.8 min] Player  7 | HR:  77 bpm | Accel: 0.72
+[  0.8 min] Player  8 | HR:  74 bpm | Accel: 1.14
+IMPACT EVENT! Player 9 at 0.75 min | accel=11.62 | heart_rate=77
+[EDGE OUT] TIER1-URGENT | Player  9 | edge_latency=0.01ms
+[  0.8 min] Player 10 | HR:  83 bpm | Accel: 0.85
+    [NETWORK] Packet LOST — Player 10 at 0.75 min
+[  0.8 min] Player 11 | HR:  72 bpm | Accel: 0.76
+[  0.8 min] Player 12 | HR:  75 bpm | Accel: 1.80
+[  0.8 min] Player 13 | HR:  81 bpm | Accel: 0.53
+[  0.8 min] Player 14 | HR:  82 bpm | Accel: 0.99
+[  0.8 min] Player 15 | HR:  90 bpm | Accel: 1.13
+[  0.8 min] Player 16 | HR:  79 bpm | Accel: 0.99
+[  0.8 min] Player 17 | HR:  81 bpm | Accel: 1.52
+[  0.8 min] Player 18 | HR:  88 bpm | Accel: 0.84
+[  0.8 min] Player 19 | HR:  84 bpm | Accel: 0.66
+[  0.8 min] Player 20 | HR:  88 bpm | Accel: 1.60
+[  0.8 min] Player 21 | HR:  80 bpm | Accel: 1.95
+[  0.8 min] Player 22 | HR:  70 bpm | Accel: 1.11
+[  1.1 min] Player  1 | HR:  69 bpm | Accel: 0.53
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2397.84ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2260.47ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2177.59ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2079.7ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2036.92ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=1985.48ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=1953.51ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=1746.65ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1702.58ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1624.01ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1583.34ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1460.34ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1435.77ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1300.65ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1269.24ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1209.43ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1178.16ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1157.04ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1126.74ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.02ms
+[  1.1 min] Player  2 | HR:  84 bpm | Accel: 1.36
+[  1.1 min] Player  3 | HR:  68 bpm | Accel: 0.57
+[  1.1 min] Player  4 | HR:  71 bpm | Accel: 1.99
+[  1.1 min] Player  5 | HR:  76 bpm | Accel: 0.65
+[  1.1 min] Player  6 | HR:  70 bpm | Accel: 0.98
+[  1.1 min] Player  7 | HR:  78 bpm | Accel: 1.79
+[  1.1 min] Player  8 | HR:  74 bpm | Accel: 1.73
+[  1.1 min] Player  9 | HR:  75 bpm | Accel: 0.90
+[  1.1 min] Player 10 | HR:  82 bpm | Accel: 1.36
+[  1.1 min] Player 11 | HR:  72 bpm | Accel: 1.62
+[  1.1 min] Player 12 | HR:  78 bpm | Accel: 0.63
+[  1.1 min] Player 13 | HR:  83 bpm | Accel: 0.53
+[  1.1 min] Player 14 | HR:  82 bpm | Accel: 0.82
+[  1.1 min] Player 15 | HR:  90 bpm | Accel: 1.37
+[  1.1 min] Player 16 | HR:  82 bpm | Accel: 0.86
+[  1.1 min] Player 17 | HR:  81 bpm | Accel: 1.59
+[  1.1 min] Player 18 | HR:  85 bpm | Accel: 1.86
+[  1.1 min] Player 19 | HR:  87 bpm | Accel: 1.48
+[  1.1 min] Player 20 | HR:  91 bpm | Accel: 0.55
+[  1.1 min] Player 21 | HR:  79 bpm | Accel: 1.04
+[  1.1 min] Player 22 | HR:  70 bpm | Accel: 1.93
+[  1.5 min] Player  1 | HR:  68 bpm | Accel: 1.83
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2934.68ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2818.01ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2708.41ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2607.44ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2507.58ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2377.6ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=2258.65ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=2217.0ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=2136.52ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=2000.69ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1927.91ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1896.22ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1773.2ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1729.89ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1659.29ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1537.47ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1494.24ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1382.37ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1255.68ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1193.41ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1065.92ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.01ms
+[  1.5 min] Player  2 | HR:  84 bpm | Accel: 1.19
+[  1.5 min] Player  3 | HR:  67 bpm | Accel: 0.57
+[  1.5 min] Player  4 | HR:  73 bpm | Accel: 1.93
+[  1.5 min] Player  5 | HR:  73 bpm | Accel: 1.69
+[  1.5 min] Player  6 | HR:  72 bpm | Accel: 1.17
+[  1.5 min] Player  7 | HR:  81 bpm | Accel: 1.40
+[  1.5 min] Player  8 | HR:  72 bpm | Accel: 0.60
+[  1.5 min] Player  9 | HR:  76 bpm | Accel: 1.87
+[  1.5 min] Player 10 | HR:  84 bpm | Accel: 0.72
+[  1.5 min] Player 11 | HR:  69 bpm | Accel: 0.84
+[  1.5 min] Player 12 | HR:  77 bpm | Accel: 1.92
+[  1.5 min] Player 13 | HR:  80 bpm | Accel: 1.76
+[  1.5 min] Player 14 | HR:  80 bpm | Accel: 1.28
+[  1.5 min] Player 15 | HR:  90 bpm | Accel: 0.60
+[  1.5 min] Player 16 | HR:  80 bpm | Accel: 1.93
+[  1.5 min] Player 17 | HR:  83 bpm | Accel: 0.71
+[  1.5 min] Player 18 | HR:  84 bpm | Accel: 0.95
+[  1.5 min] Player 19 | HR:  87 bpm | Accel: 1.66
+[  1.5 min] Player 20 | HR:  90 bpm | Accel: 1.98
+[  1.5 min] Player 21 | HR:  78 bpm | Accel: 1.75
+[  1.5 min] Player 22 | HR:  69 bpm | Accel: 1.35
+[  1.9 min] Player  1 | HR:  65 bpm | Accel: 1.77
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2834.67ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2813.1ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2775.77ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2671.72ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2592.54ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2561.88ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=2426.82ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=2319.37ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=2228.87ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=2139.27ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=2027.98ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1969.23ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1832.46ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1765.08ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1736.48ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1673.42ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1535.8ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1469.56ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1346.23ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1199.7ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1052.29ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.01ms
+[  1.9 min] Player  2 | HR:  86 bpm | Accel: 1.64
+[  1.9 min] Player  3 | HR:  69 bpm | Accel: 1.60
+[  1.9 min] Player  4 | HR:  73 bpm | Accel: 0.91
+[  1.9 min] Player  5 | HR:  75 bpm | Accel: 0.56
+[  1.9 min] Player  6 | HR:  69 bpm | Accel: 0.95
+[  1.9 min] Player  7 | HR:  82 bpm | Accel: 0.53
+[  1.9 min] Player  8 | HR:  70 bpm | Accel: 1.94
+[  1.9 min] Player  9 | HR:  79 bpm | Accel: 1.11
+[  1.9 min] Player 10 | HR:  83 bpm | Accel: 1.20
+[  1.9 min] Player 11 | HR:  70 bpm | Accel: 1.90
+[  1.9 min] Player 12 | HR:  74 bpm | Accel: 0.70
+[  1.9 min] Player 13 | HR:  78 bpm | Accel: 1.51
+[  1.9 min] Player 14 | HR:  79 bpm | Accel: 0.88
+[  1.9 min] Player 15 | HR:  90 bpm | Accel: 0.71
+[  1.9 min] Player 16 | HR:  80 bpm | Accel: 0.76
+[  1.9 min] Player 17 | HR:  85 bpm | Accel: 1.53
+[  1.9 min] Player 18 | HR:  86 bpm | Accel: 0.85
+[  1.9 min] Player 19 | HR:  89 bpm | Accel: 1.84
+[  1.9 min] Player 20 | HR:  91 bpm | Accel: 0.77
+[  1.9 min] Player 21 | HR:  76 bpm | Accel: 1.04
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=1904.67ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=1768.96ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=1678.48ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=1637.67ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=1564.07ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=1505.67ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=1404.92ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=1291.1ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=1231.97ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=1092.41ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=988.64ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=845.81ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=695.71ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=635.44ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=611.3ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=469.23ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=344.41ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=266.13ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=132.65ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=0.02ms
+[  1.9 min] Player 22 | HR:  68 bpm | Accel: 1.57
+[  2.2 min] Player  1 | HR:  66 bpm | Accel: 1.98
+[  2.2 min] Player  2 | HR:  84 bpm | Accel: 1.95
+[  2.2 min] Player  3 | HR:  69 bpm | Accel: 1.76
+[  2.2 min] Player  4 | HR:  76 bpm | Accel: 1.18
+[  2.2 min] Player  5 | HR:  78 bpm | Accel: 1.63
+[  2.2 min] Player  6 | HR:  70 bpm | Accel: 0.54
+[  2.2 min] Player  7 | HR:  82 bpm | Accel: 1.42
+[  2.2 min] Player  8 | HR:  67 bpm | Accel: 1.05
+[  2.2 min] Player  9 | HR:  78 bpm | Accel: 1.82
+[  2.2 min] Player 10 | HR:  83 bpm | Accel: 1.53
+[  2.2 min] Player 11 | HR:  68 bpm | Accel: 1.45
+[  2.2 min] Player 12 | HR:  77 bpm | Accel: 1.80
+[  2.2 min] Player 13 | HR:  76 bpm | Accel: 1.50
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1981.9ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=918.02ms
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=791.3ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=707.87ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=613.33ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=566.32ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=429.25ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=392.25ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=339.29ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=280.01ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=228.97ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=157.96ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=135.29ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=0.01ms
+[  2.2 min] Player 14 | HR:  76 bpm | Accel: 1.69
+[  2.2 min] Player 15 | HR:  91 bpm | Accel: 1.93
+[  2.2 min] Player 16 | HR:  81 bpm | Accel: 1.07
+[  2.2 min] Player 17 | HR:  83 bpm | Accel: 1.68
+[  2.2 min] Player 18 | HR:  89 bpm | Accel: 1.79
+[  2.2 min] Player 19 | HR:  92 bpm | Accel: 1.98
+[  2.2 min] Player 20 | HR:  89 bpm | Accel: 1.77
+[  2.2 min] Player 21 | HR:  73 bpm | Accel: 0.84
+[  2.2 min] Player 22 | HR:  65 bpm | Accel: 1.37
+[  2.6 min] Player  1 | HR:  68 bpm | Accel: 0.68
+[  2.6 min] Player  2 | HR:  83 bpm | Accel: 0.95
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1937.47ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1815.74ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1753.3ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1704.73ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1562.76ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1516.06ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1486.03ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1349.98ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1220.54ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=87.88ms
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=0.01ms
+[  2.6 min] Player  3 | HR:  66 bpm | Accel: 1.16
+[  2.6 min] Player  4 | HR:  78 bpm | Accel: 1.94
+[  2.6 min] Player  5 | HR:  76 bpm | Accel: 1.93
+[  2.6 min] Player  6 | HR:  67 bpm | Accel: 1.27
+[  2.6 min] Player  7 | HR:  80 bpm | Accel: 0.60
+[  2.6 min] Player  8 | HR:  64 bpm | Accel: 1.99
+[  2.6 min] Player  9 | HR:  77 bpm | Accel: 1.68
+[  2.6 min] Player 10 | HR:  84 bpm | Accel: 1.09
+[  2.6 min] Player 11 | HR:  70 bpm | Accel: 0.83
+[  2.6 min] Player 12 | HR:  74 bpm | Accel: 1.19
+[  2.6 min] Player 13 | HR:  78 bpm | Accel: 1.73
+[  2.6 min] Player 14 | HR:  77 bpm | Accel: 0.64
+[  2.6 min] Player 15 | HR:  94 bpm | Accel: 1.83
+[  2.6 min] Player 16 | HR:  82 bpm | Accel: 1.35
+[  2.6 min] Player 17 | HR:  83 bpm | Accel: 0.70
+[  2.6 min] Player 18 | HR:  90 bpm | Accel: 1.22
+[  2.6 min] Player 19 | HR:  92 bpm | Accel: 1.59
+[  2.6 min] Player 20 | HR:  91 bpm | Accel: 0.70
+[  2.6 min] Player 21 | HR:  75 bpm | Accel: 0.81
+[  2.6 min] Player 22 | HR:  68 bpm | Accel: 1.69
+[  3.0 min] Player  1 | HR:  65 bpm | Accel: 1.30
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2875.27ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2804.72ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2683.23ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2584.93ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2441.3ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=2316.37ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=2230.13ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=2089.85ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=1949.07ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1896.6ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1828.07ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1685.63ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1665.05ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1562.94ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1446.64ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1337.14ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1286.2ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1225.63ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1185.15ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1039.13ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.01ms
+[  3.0 min] Player  2 | HR:  80 bpm | Accel: 0.62
+[  3.0 min] Player  3 | HR:  64 bpm | Accel: 1.92
+[  3.0 min] Player  4 | HR:  79 bpm | Accel: 0.72
+[  3.0 min] Player  5 | HR:  77 bpm | Accel: 1.84
+[  3.0 min] Player  6 | HR:  64 bpm | Accel: 1.04
+[  3.0 min] Player  7 | HR:  79 bpm | Accel: 1.45
+[  3.0 min] Player  8 | HR:  67 bpm | Accel: 1.27
+[  3.0 min] Player  9 | HR:  74 bpm | Accel: 1.67
+[  3.0 min] Player 10 | HR:  87 bpm | Accel: 0.81
+[  3.0 min] Player 11 | HR:  71 bpm | Accel: 1.28
+[  3.0 min] Player 12 | HR:  71 bpm | Accel: 1.11
+[  3.0 min] Player 13 | HR:  80 bpm | Accel: 1.86
+[  3.0 min] Player 14 | HR:  80 bpm | Accel: 0.89
+[  3.0 min] Player 15 | HR:  93 bpm | Accel: 0.57
+[  3.0 min] Player 16 | HR:  83 bpm | Accel: 1.95
+[  3.0 min] Player 17 | HR:  83 bpm | Accel: 1.82
+[  3.0 min] Player 18 | HR:  91 bpm | Accel: 1.27
+[  3.0 min] Player 19 | HR:  93 bpm | Accel: 1.10
+[  3.0 min] Player 20 | HR:  92 bpm | Accel: 1.94
+[  3.0 min] Player 21 | HR:  76 bpm | Accel: 0.57
+[  3.0 min] Player 22 | HR:  67 bpm | Accel: 1.73
+[  3.4 min] Player  1 | HR:  68 bpm | Accel: 1.56
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2478.23ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2407.64ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2384.02ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2323.51ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2273.99ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2137.82ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=2109.76ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=2056.75ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=2023.34ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=1987.33ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1919.94ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1836.12ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1744.59ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1668.63ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1642.83ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1542.58ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1450.97ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1429.95ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1315.35ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1236.79ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1102.6ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.02ms
+[  3.4 min] Player  2 | HR:  83 bpm | Accel: 1.19
+[  3.4 min] Player  3 | HR:  61 bpm | Accel: 1.12
+[  3.4 min] Player  4 | HR:  78 bpm | Accel: 1.35
+[  3.4 min] Player  5 | HR:  80 bpm | Accel: 1.58
+[  3.4 min] Player  6 | HR:  64 bpm | Accel: 1.71
+[  3.4 min] Player  7 | HR:  79 bpm | Accel: 1.27
+[  3.4 min] Player  8 | HR:  67 bpm | Accel: 0.73
+[  3.4 min] Player  9 | HR:  72 bpm | Accel: 1.27
+[  3.4 min] Player 10 | HR:  84 bpm | Accel: 1.91
+[  3.4 min] Player 11 | HR:  72 bpm | Accel: 1.85
+[  3.4 min] Player 12 | HR:  70 bpm | Accel: 1.00
+[  3.4 min] Player 13 | HR:  80 bpm | Accel: 0.85
+[  3.4 min] Player 14 | HR:  78 bpm | Accel: 0.70
+[  3.4 min] Player 15 | HR:  91 bpm | Accel: 1.56
+[  3.4 min] Player 16 | HR:  83 bpm | Accel: 1.08
+[  3.4 min] Player 17 | HR:  82 bpm | Accel: 1.85
+[  3.4 min] Player 18 | HR:  88 bpm | Accel: 1.29
+[  3.4 min] Player 19 | HR:  95 bpm | Accel: 1.58
+[  3.4 min] Player 20 | HR:  92 bpm | Accel: 1.51
+[  3.4 min] Player 21 | HR:  73 bpm | Accel: 0.92
+[  3.4 min] Player 22 | HR:  65 bpm | Accel: 0.57
+[  3.8 min] Player  1 | HR:  69 bpm | Accel: 1.62
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2560.69ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2455.62ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2324.06ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2213.19ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2125.87ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2047.94ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=1964.89ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=1926.82ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=1793.9ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=1766.32ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1727.82ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1704.04ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1653.56ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1617.94ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1575.92ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1538.84ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1500.26ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1356.11ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1257.65ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1214.94ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1113.87ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.01ms
+[  3.8 min] Player  2 | HR:  85 bpm | Accel: 1.39
+[  3.8 min] Player  3 | HR:  64 bpm | Accel: 0.92
+[  3.8 min] Player  4 | HR:  76 bpm | Accel: 1.64
+[  3.8 min] Player  5 | HR:  80 bpm | Accel: 1.79
+[  3.8 min] Player  6 | HR:  64 bpm | Accel: 1.67
+[  3.8 min] Player  7 | HR:  80 bpm | Accel: 1.88
+[  3.8 min] Player  8 | HR:  66 bpm | Accel: 0.92
+[  3.8 min] Player  9 | HR:  72 bpm | Accel: 1.31
+[  3.8 min] Player 10 | HR:  83 bpm | Accel: 1.37
+[  3.8 min] Player 11 | HR:  70 bpm | Accel: 0.59
+[  3.8 min] Player 12 | HR:  72 bpm | Accel: 1.76
+[  3.8 min] Player 13 | HR:  79 bpm | Accel: 1.86
+[  3.8 min] Player 14 | HR:  78 bpm | Accel: 1.57
+[  3.8 min] Player 15 | HR:  93 bpm | Accel: 0.53
+[  3.8 min] Player 16 | HR:  85 bpm | Accel: 1.93
+[  3.8 min] Player 17 | HR:  85 bpm | Accel: 1.68
+[  3.8 min] Player 18 | HR:  86 bpm | Accel: 1.87
+[  3.8 min] Player 19 | HR:  96 bpm | Accel: 0.69
+[  3.8 min] Player 20 | HR:  92 bpm | Accel: 1.74
+[  3.8 min] Player 21 | HR:  72 bpm | Accel: 1.43
+[  3.8 min] Player 22 | HR:  68 bpm | Accel: 1.16
+[  4.1 min] Player  1 | HR:  69 bpm | Accel: 0.94
+[EDGE OUT] tier2-routine | Player  2 | edge_latency=2722.91ms
+[EDGE OUT] tier2-routine | Player  3 | edge_latency=2578.91ms
+[EDGE OUT] tier2-routine | Player  4 | edge_latency=2498.34ms
+[EDGE OUT] tier2-routine | Player  5 | edge_latency=2366.67ms
+[EDGE OUT] tier2-routine | Player  6 | edge_latency=2255.8ms
+[EDGE OUT] tier2-routine | Player  7 | edge_latency=2169.7ms
+[EDGE OUT] tier2-routine | Player  8 | edge_latency=2057.83ms
+[EDGE OUT] tier2-routine | Player  9 | edge_latency=1982.76ms
+[EDGE OUT] tier2-routine | Player 10 | edge_latency=1939.65ms
+[EDGE OUT] tier2-routine | Player 11 | edge_latency=1861.23ms
+[EDGE OUT] tier2-routine | Player 12 | edge_latency=1837.69ms
+[EDGE OUT] tier2-routine | Player 13 | edge_latency=1815.82ms
+[EDGE OUT] tier2-routine | Player 14 | edge_latency=1741.56ms
+[EDGE OUT] tier2-routine | Player 15 | edge_latency=1608.94ms
+[EDGE OUT] tier2-routine | Player 16 | edge_latency=1569.38ms
+[EDGE OUT] tier2-routine | Player 17 | edge_latency=1465.8ms
+[EDGE OUT] tier2-routine | Player 18 | edge_latency=1397.68ms
+[EDGE OUT] tier2-routine | Player 19 | edge_latency=1364.11ms
+[EDGE OUT] tier2-routine | Player 20 | edge_latency=1287.9ms
+[EDGE OUT] tier2-routine | Player 21 | edge_latency=1159.64ms
+[EDGE OUT] tier2-routine | Player 22 | edge_latency=1108.14ms
+[EDGE OUT] tier2-routine | Player  1 | edge_latency=0.02ms
+[  4.1 min] Player  2 | HR:  86 bpm | Accel: 0.89
+[  4.1 min] Player  3 | HR:  61 bpm | Accel: 1.21
+[  4.1 min] Player  4 | HR:  75 bpm | Accel: 1.49
+[  4.1 min] Player  5 | HR:  82 bpm | Accel: 0.86
+[  4.1 min] Player  6 | HR:  61 bpm | Accel: 0.91
+[  4.1 min] Player  7 | HR:  78 bpm | Accel: 1.32
+[  4.1 min] Player  8 | HR:  64 bpm | Accel: 1.20
+[  4.1 min] Player  9 | HR:  69 bpm | Accel: 1.69
+[  4.1 min] Player 10 | HR:  85 bpm | Accel: 1.23
+[  4.1 min] Player 11 | HR:  68 bpm | Accel: 1.36
+[  4.1 min] Player 12 | HR:  69 bpm | Accel: 1.10
+[  4.1 min] Player 13 | HR:  76 bpm | Accel: 1.55
+[  4.1 min] Player 14 | HR:  81 bpm | Accel: 1.90
+[  4.1 min] Player 15 | HR:  90 bpm | Accel: 1.00
+[  4.1 min] Player 16 | HR:  85 bpm | Accel: 0.56
+[  4.1 min] Player 17 | HR:  83 bpm | Accel: 1.80
+[  4.1 min] Player 18 | HR:  89 bpm | Accel: 0.91
+[  4.1 min] Player 19 | HR:  97 bpm | Accel: 0.80
+[  4.1 min] Player 20 | HR:  90 bpm | Accel: 1.80
+[  4.1 min] Player 21 | HR:  74 bpm | Accel: 1.30
+[  4.1 min] Player 22 | HR:  66 bpm | Accel: 1.82
