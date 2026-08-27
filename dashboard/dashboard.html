@@ -5,99 +5,264 @@
 <title>Football Edge QoS Dashboard</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
+  :root {
+    --bg: #fdf6e3;
+    --panel: #eaf4f4;
+    --panel-border: #c9dcdc;
+    --text: black;
+    --muted: #6b6b6b;
+    --amber: #d97706;
+    --pitch-green: #cdeccd;
+    --pitch-line: rgba(0,0,0,0.55);
+    --team-a: #2563eb;
+    --team-b: #dc2626;
+    --tier1: #dc2626;
+    --tier2: #2563eb;
+}
+  * { box-sizing: border-box; }
   body {
-    background: #0f1720;
-    color: #e5e7eb;
-    font-family: Arial, sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(245,166,35,0.06), transparent 40%),
+      radial-gradient(circle at 85% 90%, rgba(34,211,238,0.05), transparent 40%);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 24px;
   }
-  h1 { font-size: 20px; margin-bottom: 20px; }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 4px 0;
+    letter-spacing: 0.5px;
+  }
+  h1 span { color: var(--amber); }
+  #status {
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
   .layout {
     display: flex;
     gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   .panel {
-    background: #1a2532;
-    border-radius: 8px;
-    padding: 15px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 16px;
   }
-  #pitch-container {
-    width: 500px;
-    height: 320px;
+  .panel-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  /* ---- Pitch ---- */
+  #pitch-container { width: 520px; }
+  #pitch-svg-wrap {
     position: relative;
-  }
-  #pitch {
     width: 100%;
-    height: 100%;
-    background: #1f8a4c;
-    border: 2px solid white;
-    border-radius: 4px;
-    position: relative;
+    aspect-ratio: 500 / 320;
+    border-radius: 6px;
     overflow: hidden;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.5);
   }
+  #pitch-svg-wrap svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
   .player-dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background: #3b82f6;
+    background: var(--team-a);
+    border: 2px solid rgba(0,0,0,0.4);
     position: absolute;
-    transition: left 0.5s linear, top 0.5s linear, background 0.2s;
+    transform: translate(-50%, -50%);
+    transition: left 1.2s ease-in-out, top 1.2s ease-in-out, background 0.2s, box-shadow 0.2s;
+    z-index: 2;
   }
+  .player-dot.team-b { background: var(--team-b); }
   .player-dot.impact {
-    background: #ef4444;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(244,63,94,0.6), 0 0 14px 4px rgba(244,63,94,0.9);
     width: 16px;
     height: 16px;
   }
-  #analytics-container {
-    flex: 1;
+  .legend {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--muted);
   }
-  #status {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #9ca3af;
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+  /* ---- Analytics ---- */
+  #analytics-container { flex: 1; min-width: 480px; }
+  #stats {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--muted);
   }
+  #stats b { color: var(--text); }
+
+  table#player-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-top: 14px;
+  }
+  #player-table th {
+    text-align: left;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10.5px;
+    letter-spacing: 0.5px;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--panel-border);
+    position: sticky;
+    top: 0;
+    background: var(--panel);
+  }
+  #player-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  #player-table tr.updated { animation: flash 0.6s ease-out; }
+  @keyframes flash { from { background: rgba(245,166,35,0.25); } to { background: transparent; } }
+  .team-chip {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  .tier-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 10.5px;
+    font-weight: 600;
+  }
+  .tier-badge.t1 { background: rgba(244,63,94,0.18); color: var(--tier1); }
+  .tier-badge.t2 { background: rgba(34,211,238,0.15); color: var(--tier2); }
+  #player-table-wrap { max-height: 260px; overflow-y: auto; }
+
+  /* ---- Overlay ---- */
   #overlay {
     display: none;
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.8);
     align-items: center;
     justify-content: center;
     z-index: 100;
   }
   #overlay-box {
-    background: #1a2532;
-    border: 2px solid #ef4444;
-    padding: 30px;
-    border-radius: 8px;
+    background: var(--panel);
+    border: 2px solid var(--tier1);
+    padding: 32px 40px;
+    border-radius: 10px;
     text-align: center;
   }
-  #overlay-box h2 { color: #ef4444; margin-top: 0; }
+  #overlay-box h2 { color: var(--tier1); margin-top: 0; letter-spacing: 1px; }
   #resume-btn {
-    margin-top: 15px;
-    padding: 10px 25px;
-    background: #ef4444;
-    color: white;
+    margin-top: 18px;
+    padding: 10px 28px;
+    background: var(--amber);
+    color: #12100e;
+    font-weight: 700;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 15px;
     cursor: pointer;
   }
+  #resume-btn:hover { filter: brightness(1.1); }
 </style>
 </head>
 <body>
 
-<h1>Football Edge QoS Dashboard</h1>
+<h1>Football <span>Edge QoS</span> Dashboard</h1>
 <div id="status">Connecting...</div>
 
 <div class="layout">
   <div class="panel" id="pitch-container">
-    <div id="pitch"></div>
+    <div class="panel-title">Live Pitch View</div>
+    <div id="pitch-svg-wrap">
+      <svg viewBox="0 0 500 320" preserveAspectRatio="none">
+        <rect x="0" y="0" width="500" height="320" fill="var(--pitch-green)"/>
+        <!-- subtle mow stripes -->
+        <g opacity="0.06">
+          <rect x="0" y="0" width="45.5" height="320" fill="#000"/>
+          <rect x="91" y="0" width="45.5" height="320" fill="#000"/>
+          <rect x="182" y="0" width="45.5" height="320" fill="#000"/>
+          <rect x="273" y="0" width="45.5" height="320" fill="#000"/>
+          <rect x="364" y="0" width="45.5" height="320" fill="#000"/>
+          <rect x="455" y="0" width="45" height="320" fill="#000"/>
+        </g>
+        <g fill="none" stroke="var(--pitch-line)" stroke-width="2">
+          <!-- outer boundary -->
+          <rect x="10" y="10" width="480" height="300"/>
+          <!-- halfway line -->
+          <line x1="250" y1="10" x2="250" y2="310"/>
+          <!-- center circle + spot -->
+          <circle cx="250" cy="160" r="45"/>
+          <circle cx="250" cy="160" r="2.2" fill="var(--pitch-line)"/>
+          <!-- left penalty area -->
+          <rect x="10" y="70" width="70" height="180"/>
+          <rect x="10" y="115" width="28" height="90"/>
+          <circle cx="88" cy="160" r="2.2" fill="var(--pitch-line)"/>
+          <path d="M 80 120 A 45 45 0 0 1 80 200" />
+          <!-- right penalty area -->
+          <rect x="420" y="70" width="70" height="180"/>
+          <rect x="462" y="115" width="28" height="90"/>
+          <circle cx="412" cy="160" r="2.2" fill="var(--pitch-line)"/>
+          <path d="M 420 120 A 45 45 0 0 0 420 200" />
+          <!-- corner arcs -->
+          <path d="M 10 22 A 12 12 0 0 0 22 10" />
+          <path d="M 478 10 A 12 12 0 0 0 490 22" />
+          <path d="M 490 298 A 12 12 0 0 0 478 310" />
+          <path d="M 22 310 A 12 12 0 0 0 10 298" />
+        </g>
+        <!-- goals -->
+        <rect x="4" y="140" width="6" height="40" fill="none" stroke="var(--pitch-line)" stroke-width="2"/>
+        <rect x="490" y="140" width="6" height="40" fill="none" stroke="var(--pitch-line)" stroke-width="2"/>
+      </svg>
+      <div id="pitch-overlay"></div>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--team-a)"></i> Team A (1-11)</span>
+      <span><i style="background:var(--team-b)"></i> Team B (12-22)</span>
+      <span><i style="background:#fff; box-shadow:0 0 0 3px rgba(244,63,94,0.6)"></i> Impact event</span>
+    </div>
   </div>
+
   <div class="panel" id="analytics-container">
-    <canvas id="latencyChart" height="150"></canvas>
-    <div id="stats" style="margin-top:15px; font-size:14px;"></div>
+    <div class="panel-title">Latency by QoS Tier</div>
+    <canvas id="latencyChart" height="130"></canvas>
+    <div id="stats"></div>
+
+    <div class="panel-title" style="margin-top:18px;">Player Sensor Analytics</div>
+    <div id="player-table-wrap">
+      <table id="player-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Team</th>
+            <th>HR (bpm)</th>
+            <th>Accel (g)</th>
+            <th>Tier</th>
+            <th>Latency (ms)</th>
+          </tr>
+        </thead>
+        <tbody id="player-table-body"></tbody>
+      </table>
+    </div>
   </div>
 </div>
 
@@ -110,31 +275,32 @@
 </div>
 
 <script>
-const pitch = document.getElementById("pitch");
+const pitchOverlay = document.getElementById("pitch-overlay");
 const statusEl = document.getElementById("status");
 const overlay = document.getElementById("overlay");
 const overlayTitle = document.getElementById("overlay-title");
 const overlayDetail = document.getElementById("overlay-detail");
 const resumeBtn = document.getElementById("resume-btn");
+const playerTableBody = document.getElementById("player-table-body");
 
-// Create 22 player dots at random starting positions
+// Create 22 player dots at random starting positions, split into two teams
 const playerDots = {};
 for (let i = 1; i <= 22; i++) {
   const dot = document.createElement("div");
-  dot.className = "player-dot";
-  dot.style.left = Math.random() * 90 + "%";
-  dot.style.top = Math.random() * 85 + "%";
-  pitch.appendChild(dot);
+  dot.className = "player-dot" + (i > 11 ? " team-b" : "");
+  dot.style.left = (5 + Math.random() * 90) + "%";
+  dot.style.top = (8 + Math.random() * 84) + "%";
+  pitchOverlay.appendChild(dot);
   playerDots[i] = dot;
 }
 
-// Move players randomly every second (visual liveliness)
+// Move players randomly every ~1.8s (visual liveliness)
 setInterval(() => {
   for (let i = 1; i <= 22; i++) {
-    playerDots[i].style.left = Math.random() * 90 + "%";
-    playerDots[i].style.top = Math.random() * 85 + "%";
+    playerDots[i].style.left = (5 + Math.random() * 90) + "%";
+    playerDots[i].style.top = (8 + Math.random() * 84) + "%";
   }
-}, 1500);
+}, 1800);
 
 // ---- Chart setup ----
 const ctx = document.getElementById("latencyChart").getContext("2d");
@@ -143,27 +309,57 @@ const chart = new Chart(ctx, {
   data: {
     labels: [],
     datasets: [
-      { label: "Tier 1 (Urgent) Latency ms", data: [], borderColor: "#ef4444", tension: 0.2 },
-      { label: "Tier 2 (Routine) Latency ms", data: [], borderColor: "#3b82f6", tension: 0.2 }
+      { label: "Tier 1 (Urgent) Latency ms", data: [], borderColor: "#f43f5e", tension: 0.25, pointRadius: 0 },
+      { label: "Tier 2 (Routine) Latency ms", data: [], borderColor: "#22d3ee", tension: 0.25, pointRadius: 0 }
     ]
   },
   options: {
     animation: false,
     scales: {
-      x: { ticks: { color: "#9ca3af" } },
-      y: { ticks: { color: "#9ca3af" } }
+      x: { ticks: { color: "#6b6b6b" }, grid: { color: "rgba(0,0,0,0.08)" } },
+      y: { ticks: { color: "#6b6b6b" }, grid: { color: "rgba(0,0,0,0.08)" } }
     },
-    plugins: { legend: { labels: { color: "#e5e7eb" } } }
+    plugins: { legend: { labels: { color: "#2b2b2b" } } }
   }
 });
 
 let tickCount = 0;
 let tier1Count = 0, tier2Count = 0;
 
-function updateStats() {
-  document.getElementById("stats").innerText =
-    `Tier 1 (Urgent) readings: ${tier1Count} | Tier 2 (Routine) readings: ${tier2Count}`;
+// Live per-player state, keyed by player_id
+const playerState = {};
+for (let i = 1; i <= 22; i++) {
+  playerState[i] = { hr: "-", accel: "-", tier: null, latency: "-" };
 }
+
+function updateStats() {
+  document.getElementById("stats").innerHTML =
+    `Tier 1 (Urgent) readings: <b>${tier1Count}</b> &nbsp;|&nbsp; Tier 2 (Routine) readings: <b>${tier2Count}</b>`;
+}
+
+function renderPlayerTable(justUpdatedId) {
+  let rows = "";
+  for (let i = 1; i <= 22; i++) {
+    const p = playerState[i];
+    const team = i > 11 ? "b" : "a";
+    const tierBadge = p.tier === 1
+      ? `<span class="tier-badge t1">URGENT</span>`
+      : p.tier === 2
+        ? `<span class="tier-badge t2">routine</span>`
+        : "-";
+    const rowClass = i === justUpdatedId ? "updated" : "";
+    rows += `<tr class="${rowClass}">
+      <td><span class="team-chip" style="background:var(--team-${team})"></span>Player ${i}</td>
+      <td>${team === "a" ? "A" : "B"}</td>
+      <td>${p.hr}</td>
+      <td>${p.accel}</td>
+      <td>${tierBadge}</td>
+      <td>${p.latency}</td>
+    </tr>`;
+  }
+  playerTableBody.innerHTML = rows;
+}
+renderPlayerTable();
 
 // ---- WebSocket connection ----
 const ws = new WebSocket(`ws://${window.location.host}/ws`);
@@ -176,9 +372,8 @@ ws.onmessage = (event) => {
   if (msg.type === "PAUSE_EVENT") {
     const r = msg.reading;
     overlayTitle.innerText = r.major_event ? "MAJOR INJURY DETECTED" : "MINOR IMPACT DETECTED";
-    overlayDetail.innerText = `Player ${r.player_id} at ${r.sim_time_min} min — accel: ${r.accel_value}`;
+    overlayDetail.innerText = `Player ${r.player_id} at ${r.sim_time_min} min - accel: ${r.accel_value}`;
     overlay.style.display = "flex";
-    // Flash that player's dot red
     if (playerDots[r.player_id]) {
       playerDots[r.player_id].classList.add("impact");
     }
@@ -196,11 +391,21 @@ ws.onmessage = (event) => {
   if (r.tier === 1) { tier1Count++; } else { tier2Count++; }
   updateStats();
 
+  // Update this player's live analytics row
+  if (playerState[r.player_id]) {
+    playerState[r.player_id] = {
+      hr: r.heart_rate,
+      accel: r.accel_value,
+      tier: r.tier,
+      latency: r.edge_latency_ms
+    };
+    renderPlayerTable(r.player_id);
+  }
+
   chart.data.labels.push(tickCount);
   chart.data.datasets[0].data.push(r.tier === 1 ? r.edge_latency_ms : null);
   chart.data.datasets[1].data.push(r.tier === 2 ? r.edge_latency_ms : null);
 
-  // Keep chart from growing forever — show last 100 points
   if (chart.data.labels.length > 100) {
     chart.data.labels.shift();
     chart.data.datasets[0].data.shift();
@@ -211,6 +416,7 @@ ws.onmessage = (event) => {
 
 resumeBtn.onclick = async () => {
   overlay.style.display = "none";
+  Object.values(playerDots).forEach(d => d.classList.remove("impact"));
   await fetch("/resume", { method: "POST" });
 };
 </script>
